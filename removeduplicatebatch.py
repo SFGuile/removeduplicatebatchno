@@ -2,7 +2,10 @@ import xlrd
 import pandas as pd
 from datetime import datetime
 
+
 excelfilename=r'C:\Users\redmond\Desktop\架位批次库存报表.xls'
+
+#将excelfilename换成你自己的变量
 
 exportexcelname=excelfilename[0:-4]+datetime.today().strftime('%Y%m%d%H%M%S')+".xlsx"
 
