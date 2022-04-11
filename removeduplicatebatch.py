@@ -1,11 +1,18 @@
 import xlrd
 import pandas as pd
 from datetime import datetime
+import os.path
 
 
 excelfilename=r'C:\Users\redmond\Desktop\架位批次库存报表.xls'
 
 #将excelfilename换成你自己的变量
+
+ 
+
+if not os.path.isfile(excelfilename) :
+    print(r'程序终止，Excel文件不存在，请更改excelfilename变量里的路径')
+    exit()
 
 exportexcelname=excelfilename[0:-4]+datetime.today().strftime('%Y%m%d%H%M%S')+".xlsx"
 
