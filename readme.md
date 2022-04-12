@@ -7,6 +7,9 @@ https://www.python.org/downloads/
 
 装完打 python -V 来肯定装上
 装完要手工打下面命令装上附加库
+
 pip install xlrd
+
 pip install pandas
+
 pip install xlsxwriter
